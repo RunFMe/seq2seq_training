@@ -1,0 +1,14 @@
+dataset:
+  path: /home/jovyan/runfme/triton/translate/rus.txt
+  tokenizer: google/mt5-small
+  max_words: 15
+  shuffle: True
+
+  max_rows: 999999999999
+  seed:  42
+  val_frac: 0.1
+
+model:
+  pretrained: true
+  pretrained_model_name_or_path: google/mt5-small
+  config_overrides: {}
